@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="main col-4 ml-auto mr-auto mt-5">
+      <form>
+        <div class="form-group row">
+          <label for="userName" class="col-4 col-form-label">User Name</label>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-address-book"></i>
+                </div>
+              </div>
+              <input
+                id="userName"
+                name="userName"
+                placeholder="Please User Name "
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <label class="userErr"></label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="password" class="col-4 col-form-label">Password</label>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-500px"></i>
+                </div>
+              </div>
+              <input
+                id="password"
+                name="password"
+                placeholder="Please Enter Password"
+                type="password"
+                class="form-control"
+              />
+            </div>
+            <label class="passErr"></label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="confirmPassword" class="col-4 col-form-label"
+            >Confirm Password</label
+          >
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-500px"></i>
+                </div>
+              </div>
+              <input
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Please Enter Confirm Password"
+                type="password"
+                class="form-control"
+              />
+            </div>
+            <label class="cpassErr"></label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-4 col-form-label">Email</label>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-address-card-o"></i>
+                </div>
+              </div>
+              <input
+                id="email"
+                name="email"
+                placeholder="Please Enter Email"
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <label class="mailErr"></label>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="phone" class="col-4 col-form-label">Phone</label>
+          <div class="col-8">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fa fa-phone-square"></i>
+                </div>
+              </div>
+              <input
+                id="phone"
+                name="phone"
+                placeholder="Please Enter Phone Number"
+                type="text"
+                class="form-control"
+              />
+            </div>
+            <label class="phoneErr"></label>
+          </div>
+        </div>
+        <div class="form-group row mt-5">
+          <div class="offset-5 col-8">
+            <button
+              name="submit"
+              type="submit"
+              class="btn btn-primary"
+              onclick="return false"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+        <label class="err text-center w-100"></label>
+      </form>
+    </div>
+  </body>
+</html>
